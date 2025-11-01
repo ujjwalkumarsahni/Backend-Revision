@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>URL Shortener</title>
+</head>
+<body>
+  <div class="container">
+    <h1>🔗 URL Shortener</h1>
+
+    <!-- Form for entering long URL -->
+    <form action="/shorten" method="POST">
+      <div>
+        <label for="longUrl">Enter Long URL</label>
+        <input
+          type="url"
+          id="longUrl"
+          name="longUrl"
+          placeholder="https://example.com/your/very/long/url"
+          required
+        />
+      </div>
+
+      <button type="submit">Shorten URL</button>
+    </form>
+
+    <!-- Notification (appears when shortUrl exists) -->
+    <% if (shortUrl) { %>
+      <div id="notification" class="notification success">
+        ✅ URL shortened successfully!
+      </div>
+    <% } %>
+
+    <!-- Display short URL if available -->
+    <% if (shortUrl) { %>
+      <div class="result">
+        <h2>Your Short URL:</h2>
+        <a href="<%= shortUrl %>" target="_blank"><%= shortUrl %></a>
+      </div>
+    <% } %>
+  </div>
+
+  <script>
+    // Automatically hide notification after 3 seconds
+    const notification = document.getElementById('notification');
+    if (notification) {
+      setTimeout(() => {
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateY(-10px)';
+        setTimeout(() => notification.remove(), 500);
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

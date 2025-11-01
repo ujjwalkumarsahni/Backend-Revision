@@ -1,0 +1,15 @@
+{
+  "name": "lecture_6_routing_in_node",
+  "version": "1.0.0",
+  "description": "Routing in Node.js refers to determining how an application responds to a client request to a particular endpoint (URI) and HTTP method (GET, POST, etc.).  \r It’s the backbone of handling different requests and defining application behavior for each route.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

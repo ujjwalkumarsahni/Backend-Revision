@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1761847288420,
+    "productName": "Iphone",
+    "productPrice": 100000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847307568,
+    "productName": "Vivo",
+    "productPrice": 70000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847369258,
+    "productName": "Oppo",
+    "productPrice": 50000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847400067,
+    "productName": "Oppo",
+    "productPrice": 50000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847400216,
+    "productName": "Oppo",
+    "productPrice": 50000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847406821,
+    "productName": "Oppo",
+    "productPrice": 50000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847408117,
+    "productName": "Oppo",
+    "productPrice": 50000,
+    "productRating": 4
+  },
+  {
+    "id": 1761847557124,
+    "productName": "Realme",
+    "productPrice": 50000,
+    "productRating": 4
+  }
+]
